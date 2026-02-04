@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Javier Savid Teixeira</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 1cm 1.5cm;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: white;
+            color: #000;
+            font-family: "Calibri", "Calibri", serif;
+            font-size: 11pt;
+            line-height: 1.25;
+            max-width: 210mm;
+            margin: 0 auto;
+            padding: 20px 30px;
+            /* Viewport padding for browser viewing */
+        }
+
+        /* Print Override */
+        @media print {
+            body {
+                padding: 0;
+                width: 100%;
+            }
+        }
+
+        a {
+            color: #000;
+            text-decoration: none;
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 20pt;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+            letter-spacing: 0.5px;
+        }
+
+        .contact-info {
+            font-style: normal;
+            font-size: 10.5pt;
+        }
+
+        .contact-info span {
+            margin: 0 4px;
+        }
+
+        /* Sections */
+        .section {
+            margin-bottom: 15px;
+        }
+
+        h2 {
+            font-size: 12pt;
+            text-transform: uppercase;
+            border-bottom: 1px solid #000;
+            margin-bottom: 10px;
+            padding-bottom: 3px;
+            font-weight: bold;
+            letter-spacing: 0.5px;
+        }
+
+        /* Experience Items */
+        .entry {
+            margin-bottom: 12px;
+        }
+
+        .entry-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 2px;
+        }
+
+        .company {
+            font-weight: bold;
+            font-size: 11pt;
+        }
+
+        .location {
+            font-style: italic;
+        }
+
+        .job-line {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 2px;
+            font-style: italic;
+        }
+
+        .role {
+            font-weight: normal;
+            /* Often roles are italic or normal, let's stick to italic via parent or override */
+        }
+
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+            margin-top: 3px;
+        }
+
+        li {
+            margin-bottom: 2px;
+            text-align: justify;
+        }
+
+        /* Education */
+        .education-entry {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 2px;
+        }
+
+        .degree {
+            font-weight: bold;
+        }
+
+        /* Skills table-like structure for single line efficiency */
+        .skills-section p {
+            margin-bottom: 4px;
+        }
+
+        .skill-category {
+            font-weight: bold;
+        }
+
+        .location,
+        .date {
+            font-family: "Calibri", "Calibri", serif;
+            font-style: italic;
+            font-size: 11.5pt;
+            padding-right: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Javier Savid Teixeira</h1>
+        <div class="contact-info">
+            <span class="location">Bydgoszcz, Poland </span> <span>|</span>
+            +48 512 039 474 <span>|</span>
+            savidjavier@gmail.com <span>|</span>
+            linkedin.com/in/javier-savid-teixeira
+        </div>
+    </header>
+
+    <div class="section">
+        <h2>Professional Summary</h2>
+        <div class="entry">
+            <p style="text-align: justify;">
+                Telecommunications Engineer with over 10 years of experience in RAN and IP/MPLS network integration,
+                transmission planning, and advanced troubleshooting. Proven track record delivering large-scale network
+                modernization and migration projects for global service providers and telecom vendors, ensuring high
+                availability and minimal service disruption. Experienced in carrier-grade, multivendor environments
+                (Nokia, Huawei, Ericsson) with strong expertise in routing protocols, MPLS technologies, and network
+                automation (Python/Ansible). Bilingual professional focused on operational excellence, scalability, and
+                resilient network performance.
+            </p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Professional Experience</h2>
+
+        <!-- NOKIA -->
+        <div class="entry">
+            <div class="entry-header">
+                <span class="company">NOKIA</span>
+                <span class="location">Bydgoszcz, Poland </span>
+            </div>
+            <div class="job-line">
+                <span class="role">Transmission Network Integration Specialist</span>
+                <span class="date">Apr 2019 – Present </span>
+            </div>
+            <ul>
+                <li><strong>Spearheaded technical implementation</strong> of high-stakes IP routing projects within the
+                    Network Services Delivery Centre (NSDC), maximizing service availability during deployments.</li>
+                <li><strong>Executed end-to-end integration</strong> of IP/MPLS solutions, rigorously adhering to Scope
+                    of Work (SoW) and design specifications to consistently meet client SLAs.</li>
+                <li><strong>Resolved critical network incidents</strong> affecting software and hardware, significantly
+                    reducing Mean Time to Repair (MTTR) during complex integration phases.</li>
+                <li><strong>Orchestrated Router Software Upgrades</strong> and designed comprehensive LAB environments
+                    for relentless design validation and stress testing.</li>
+                <li><strong>Authored detailed Manuals of Procedure (MoPs)</strong>, establishing best practices and
+                    streamlining technical operations for the global engineering team.</li>
+            </ul>
+        </div>
+
+        <!-- CLARO AR 2015-2019 -->
+        <div class="entry">
+            <div class="entry-header">
+                <span class="company">CLARO AR</span>
+                <span class="location">Córdoba, Argentina </span>
+            </div>
+            <div class="job-line">
+                <span class="role">Radio Access Network Integration Specialist</span>
+                <span class="date">Jul 2015 – Feb 2019 </span>
+            </div>
+            <ul>
+                <li><strong>Led the integration and modernization</strong> of mobile sites across Argentina, Uruguay,
+                    and Paraguay as a key member of the Network Implementation Back Office (BOIR).</li>
+                <li><strong>Delivered seamless remote integration</strong> for hundreds of multi-technology sites
+                    (2G/3G/4G), including critical node configurations in BSC, RNC, and MSS core elements.</li>
+                <li><strong>Led complex Iub interface migrations</strong> and node reconfigurations, maximizing network
+                    capacity and spectral efficiency.</li>
+                <li><strong>Provided advanced L2/L3 technical support and escalation</strong> engineering teams,
+                    accelerating incident resolution and minimizing deployment delays.</li>
+            </ul>
+        </div>
+
+        <!-- CLARO AR 2012-2015 -->
+        <div class="entry">
+            <div class="entry-header">
+                <span class="company">CLARO AR</span>
+                <span class="location">Córdoba, Argentina </span>
+            </div>
+            <div class="job-line">
+                <span class="role">Network Integration Engineer</span>
+                <span class="date">Dec 2012 – Jun 2015 </span>
+            </div>
+            <ul>
+                <li><strong>Engineered and deployed robust transmission solutions</strong> across IP/MPLS, SDH, and PDH
+                    domains to support mission-critical connectivity.</li>
+                <li><strong>Deployed scalable 2G/3G/4G IPRAN services</strong>, facilitating the transition to
+                    high-speed mobile data transport.</li>
+                <li><strong>Optimized SDH network topology</strong> through precise path creation, link establishment,
+                    and seamless Network Element (NE) integration.</li>
+                <li><strong>Commissioned multi-vendor Microwave Radio-Links</strong> (Ceragon, Nera, Huawei, Ericsson,
+                    Nokia), ensuring diverse network interoperability.</li>
+            </ul>
+        </div>
+
+        <!-- ASPNET -->
+        <div class="entry">
+            <div class="entry-header">
+                <span class="company">ASPNET</span>
+                <span class="location">Rio Cuarto, Argentina </span>
+            </div>
+            <div class="job-line">
+                <span class="role">TCP/IP Network Administration</span>
+                <span class="date">Nov 2011 – Nov 2012 </span>
+            </div>
+            <ul>
+                <li><strong>Optimized ISP network infrastructure</strong>, implementing advanced QoS policies to
+                    guarantee bandwidth for critical services and improve user experience.</li>
+                <li><strong>Hardened network security</strong> through rigorous firewall maintenance and server
+                    administration, ensuring network integrity and service availability.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Education</h2>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="company">Universidad Nacional de Rio Cuarto (UNRC)</span>
+                <span class="location">Río Cuarto, Argentina </span>
+            </div>
+            <div class="job-line">
+                <span class="role">Bachelor of Science Degree, Telecommunications Engineer</span>
+                <span class="date">Oct 2013 </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Technical Skills</h2>
+        <div class="skills-section">
+            <p><span class="skill-category">Core Networking & Protocols:</span> IP/MPLS (L2/L3 VPN), BGP, OSPF, IS-IS,
+                TCP/IP, QoS, Traffic Engineering, SDH/PDH.</p>
+            <p><span class="skill-category">Mobile & Transmission:</span> IPRAN, 2G/3G/4G/LTE, Microwave Radio Links,
+                RAN Integration, Iub Interface.</p>
+            <p><span class="skill-category">Network Management (NMS):</span> Nokia NSP NFM-P, Huawei iManager U2000,
+                Ericsson IPT NMS, Nokia NetAct.</p>
+            <p><span class="skill-category">Hardware Platforms:</span> Nokia Service Routers (7750 SR, 7705 SAR),
+                Ceragon FibeAir (IP10/IP20), Huawei OptiX RTN, Ericsson OMS.</p>
+            <p><span class="skill-category">Automation & Tools:</span> Python (Netmiko/Pandas), Ansible, Linux
+                Administration, Git, Virtualization.</p>
+            <p><span class="skill-category">Languages:</span> Spanish (Native), English (Professional Proficiency).</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Certifications</h2>
+        <div class="entry">
+            <ul>
+                <li><strong>Nokia Multiprotocol Label Switching Exam</strong> <span class="date">(Feb 2025) </span></li>
+                <li><strong>Nokia IS-IS Routing Protocol Exam</strong> <span class="date">(Feb 2022) </span></li>
+                <li><strong>Nokia Network Routing Specialist I (NRS I) Certification</strong> <span class="date">(May
+                        2021) </span></li>
+                <li><strong>Nokia IP Networks and Services Fundamentals Exam</strong> <span class="date">(May 2021)
+                    </span></li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+
+</html>
